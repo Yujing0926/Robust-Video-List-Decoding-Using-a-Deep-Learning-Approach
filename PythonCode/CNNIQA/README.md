@@ -5,7 +5,7 @@ with the modification of the following paper:
 [Yujing ZHANG, Stéphane Coulombe, François-Xavier Coudoux, Anthony Trioux, Patrick Corlay. Optimisation du décodage par liste de vidéos corrompues basée sur une architecture CNN. 22ème édition de la conférence COmpression et REprésentation des Signaux Audiovisuels, CORESA, Jun 2023, Lille, France. 4 p. ⟨hal-04246635⟩](https://hal.science/hal-04246635)
 
 ### Note
-- The database is created with the Matlab codes in **Matlabcode-new**, and you can create your route for your database (for example `1024p_database_patchs64_test_intra/qp37_patch64`), remember to change the database route when you test with this code (in `main_new.py`, `classification_image.py` and `classification_main.py`).
+- The database is created with the Matlab codes in **Matlabcode**, and you can create your route for your database (for example `1024p_database_patchs64_test_intra/qp37_patch64`), remember to change the database route when you test with this code (in `main_new.py`, `classification_image.py` and `classification_main.py`).
 
 ## Training
 With the `main_new.py`, we implement the training of the CNN model with improved local normalization algorithm.<br>

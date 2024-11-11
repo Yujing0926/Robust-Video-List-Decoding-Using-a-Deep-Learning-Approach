@@ -1,0 +1,103 @@
+90 original video sequences used in our experiments:
+
+1) https://media.xiph.org/video/derf/ (all the videos are 1080p)
+aspen (16:9 | 570 frames)
+blue_sky (16:9 | 217 frames)
+controlled_burn (16:9 | 570 frames)
+crowd_run (16:9 | 500 frames | 1080p)
+dinner (16:9 | 950 frames)
+ducks_take_off (16:9 | 500 frames)
+factory (16:9 | 1339 frames)
+in_to_tree (16:9 | 500 frames)
+life (16:9 | 825 frames)
+old_town_cross (16:9 | 500 frames)
+park_joy (16:9 | 500 frames)
+pedestrian_area (16:9 | 375 frames)
+riverbed (16:9 | 250 frames)
+rush_hour (16:9 | 500 frames)
+snow_mnt (16:9 | 570 frames)
+speed_bag (16:9 | 570 frames)
+station2 (16:9 | 313 frames)
+sunflower (16:9 | 500 frames)
+touchdown_pass (16:9 | 570 frames)
+tractor (16:9 | 690 frames)
+west_wind_easy (16:9 | 570 frames)
+
+2)  https://mcl.usc.edu/mcl-jcv-dataset/ (all the videos are 1080p)
+BQTerrace_30fps
+BigBuckBunny_25fps
+BirdsInCage_30fps
+DanceKiss_25fps
+ElFuente1_30fps
+ElFuente2_30fps
+FoxBird_25fps
+Kimono1_24fps
+Seeking_25fps
+Tennis_24fps
+
+
+3) https://www.cdvl.org/ (all the videos are 1080p)
+NTIA_Ferry_original
+NTIA_Railway_original
+ntia_AspenWalk_original
+ntia_Cheetah_original
+ntia_Crane_original
+ntia_Denver_original
+ntia_DoubleEndBagIntro_original
+ntia_GoosePark_original
+ntia_HalftimeWide_original
+ntia_Horses_original
+ntia_Lion_original
+ntia_MrFins2e_original
+ntia_PowerDig_original
+ntia_QuarterBackSneak_original
+ntia_RedKayak_original
+ntia_ScarletOak_original
+ntia_TimelapseLeaf1e_original
+ntia_Wind_original
+ntia_Zoocuts_original
+ntia_bbcrowdgreen_original
+ntia_bbscore_original
+ntia_bbwide2_original
+ntia_musikvid_original
+ntia_parksquirrel_original
+ntia_purple1b_original
+ntia_rainbow2e_original
+ntia_redgolde_original
+ntia_snowfall2e_original
+ntia_tulip1e_original
+pscr_Kickoff_original
+pscr_RushField_original
+pscr_TouchdownDay_original
+pscr_bbpoint_original
+LiquidAssets_anemone_original 
+LiquidAssets_boats_original 
+LiquidAssets_clouds_original 
+LiquidAssets_diver1_original 
+LiquidAssets_eelhammerhead_original 
+LiquidAssets_lightreef_original 
+LiquidAssets_lobsters_original 
+LiquidAssets_rose_original 
+LiquidAssets_surfers_original 
+LiquidAssets_underboat2_original 
+LiquidAssets_wreckage_original 
+TUM_1080p_carving2_original 
+TUM_1080p_carving4_original 
+TUM_1080p_okt1_original 
+TUM_1080p_okt2_original 
+TUM_1080p_okt3_original 
+TUM_1080p_okt4_original 
+TUM_1080p_okt5_original 
+TUM_1080p_okt6_original 
+TUM_1080p_ski1_original 
+TUM_1080p_ski2_original 
+TUM_1080p_ski3_original 
+TUM_1080p_ski5_original 
+The_Foot_Music_Video_Segment02
+ntia_SkateLip_original
+ntia_tulip3e_original
+
+
+
+
+

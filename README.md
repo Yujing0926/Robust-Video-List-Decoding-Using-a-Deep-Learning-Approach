@@ -19,4 +19,12 @@ This part of code is to introduce the generation of our database which will be i
 ## PythonCode-new
 This part of code implements of the use of the CNNIQA-based image quality assessment (IQA) method and a Transformer-based IQA model. Please read the **README** in each folder to find the utilization. 
 
-
+## Citation
+```
+@article{yujing2024,
+    title   = {Robust Video List Decoding in Error-prone Transmission Systems Using a Deep Learning Approach},
+    author  = {Zhang, Yujing and Coulombe, Stéphane and Coudoux, François-Xavier and Guichemerre, Alexis and Corlay, Patrick},
+    journal = {Accepted by IEEE Access},
+    year    = {2024}
+}
+```

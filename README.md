@@ -14,12 +14,13 @@ This paper introduces a novel deep-learning assisted video list decoding method 
 
 
 ## MatlabCode-new
-This part of code is to introduce the generation of our database which will be input into CNN model and Transformer model later. Please read the **README** in this folder to find the utilization. This part is used to generate the patch-based database with full-reference (FR) patch-level quality measures for training, and the image-based database with ground-truth FR scores for testing.
+This part of code is to introduce the generation of our database which will be input into CNN model and Transformer model later. Please read the **README** file in this folder to find how to use our proposed codes. This part is used to generate the patch-based database with full-reference (FR) patch-level quality measures for training, and the image-based database with ground-truth FR scores for testing.
 
 ## PythonCode-new
-This part of code implements of the use of the CNNIQA-based image quality assessment (IQA) method and a Transformer-based IQA model. Please read the **README** in each folder to find the utilization. 
+This part of code implements our proposed CNNIQA-based image quality assessment (IQA) method and Transformer-based IQA method. Please read the **README** files in each folder to find how to install and use our proposed codes. 
 
 ## Citation
+Please cite the following paper in the case you use our codes for research proposes:
 ```
 @article{yujing2024,
     title   = {Robust Video List Decoding in Error-prone Transmission Systems Using a Deep Learning Approach},

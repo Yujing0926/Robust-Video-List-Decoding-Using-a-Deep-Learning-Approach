@@ -12,12 +12,17 @@ The database is created with the Matlab codes in **Matlabcode**, and you can cre
 Click into the website and download the pretrained model checkpoints, ignoring the source files.
 
 ## Usage
-### Training MANIQA model
+### Training MANIQA model and the improved version
 - Modify "dataset_name" in config
 - Modify train dataset path: "train_dis_path"
 - Modify validation dataset path: "val_dis_path"
+Original MANIQA model:
 ```
-python train_maniqa.py
+python train_our_data.py
+```
+Improved MANIQA model proposed in our paper:
+```
+python train_our_data_f1f2.py
 ```
 ### Predicting one image quality score
 - Modify the path of image "image_path"

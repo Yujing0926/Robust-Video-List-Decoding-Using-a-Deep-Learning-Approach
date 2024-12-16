@@ -1,6 +1,7 @@
 function super_patch_generation_rgb(OriginalYUVRoute,original_name,CandidateRoute,candidate_name,startfrm, ...
                                     ImageWidth,ImageHeight,yuvformat, patch_size, patch_name,...
-                                    patch_route_rgb, file_route_rgb, APPEND_CHAR, type, DCTT)
+                                    patch_route_rgb, file_route_rgb, APPEND_CHAR, type, img_candidate_route, ...
+                                    save_image, DCTT)
        
     if (~exist(patch_route_rgb))
         mkdir(patch_route_rgb)
@@ -75,6 +76,8 @@ function super_patch_generation_rgb(OriginalYUVRoute,original_name,CandidateRout
     end
     
 %     YUV_dis = cat(3, Y_dis, U_dis, V_dis);
+    YUV_dis = cat(3, Y_dis, U_dis, V_dis);
+    RGB_img = ycbcr2rgb(uint8(YUV_dis));
 
     if type == "train"
         fileIDPSNR_rgb = fopen([file_route_rgb APPEND_CHAR patch_name '_PSNR_VALUE_pattern.txt'], "wt");
@@ -164,9 +167,31 @@ function super_patch_generation_rgb(OriginalYUVRoute,original_name,CandidateRout
             
         end
     end
-    
+
     if type == "train"
         fclose(fileIDPSNR_rgb);
         fclose(fileIDSSIM_rgb);
+    end
+    
+    %% Save the image with RGB error pattern
+    if save_image == 0
+        for x = 1 : (ImageHeight/M)
+            for y = 1 : (ImageWidth/N)   
+                i = (x-1) * (M) ;
+                j = (y-1) * (N) ;
+                for n = 1:M
+                    for m = 1:N
+                        if (Y444(i+n,j+m)==0 & Cb444(i+n,j+m)==0 & Cr444(i+n,j+m)==0)
+                            RGB_img(i+n,j+m,1)=((-1)^(i+n+j+m)+1)/2*255;
+                            RGB_img(i+n,j+m,2)=((-1)^(j+m)+1)/2*255;
+                            RGB_img(i+n,j+m,3)=((-1)^(i+n)+1)/2*255;
+                        end
+                    end
+                end
+            end
+        end
+        image_name = append("%s",APPEND_CHAR,"%s.png");
+        image_name = sprintf(image_name,img_candidate_route, patch_name);
+        imwrite(RGB_img,image_name);
     end
 end

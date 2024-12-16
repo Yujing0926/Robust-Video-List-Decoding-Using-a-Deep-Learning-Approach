@@ -36,10 +36,10 @@ WR='WorkRoute';
 SR='Simulation_Results';
 diffYuvSize=0;
 
-patch_size = 128;
+patch_size = 32;
 patch_type = 'rgb';
-generate_patch = 0; % 0: generate, 1: not generate
-generate_super_patch = 1; % 0: generate, 1: not generate
+generate_patch = 1; % 0: generate, 1: not generate
+generate_super_patch = 0; % 0: generate, 1: not generate
 save_image = 0; % save the image with RGB error pattern
 DCTT = 0; % use Discriminant Color Texture Transformation color space conversion
           % 0: use, 1: not use
@@ -202,7 +202,8 @@ for i = 1:size(videonames,1)
             if generate_super_patch == 0                
                 super_patch_generation_rgb(OriginalYUVRoute,OriginalYUVName,IntactRoute,IntactYuvName,Error_frame,...
                                          ImageWidth,ImageHeight,yuvformat,patch_size,patch_name,...
-                                         patch_route_rgb, file_route_rgb, APPEND_CHAR, type, DCTT);
+                                         patch_route_rgb, file_route_rgb, APPEND_CHAR, type, img_candidate_route, ...
+                                         save_image, DCTT);
             end
 
             %% PSNR and SSIM
@@ -325,7 +326,8 @@ for i = 1:size(videonames,1)
                     if  generate_super_patch == 0
                         super_patch_generation_rgb(OriginalYUVRoute,original_name,CandidatesRoute,candidate_name,Error_frame,...
                                                  ImageWidth,ImageHeight,yuvformat,patch_size,patch_name,...
-                                                 patch_route_rgb, file_route_rgb, APPEND_CHAR, type, DCTT);
+                                                 patch_route_rgb, file_route_rgb, APPEND_CHAR, type, img_candidate_route, ...
+                                                 save_image,DCTT);
                     end   
                 end           
             end
